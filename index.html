@@ -25,15 +25,16 @@
             <h1>Despacito</h1>
             <p>Lorem ipsum dolor sit.</p>
 
-            <audio controls id="song">
-                <source src="music/Cupid .mp3" type="audio/mpeg">
+            <audio  id="song">
+                <source id="song-source" src="music/Cupid .mp3" type="audio/mpeg">
+                <!-- <source id="song-source" src="music/Медуза.mp3" type="audio/mpeg"> -->
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="leftClick()"><i class="fa-solid fa-backward"></i></div>
                 <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-                <div><i class="fa-solid fa-forward"></i></div>
+                <div onclick="rightClick()"><i class="fa-solid fa-forward"></i></div>
             </div>
         </div>
     </div>
